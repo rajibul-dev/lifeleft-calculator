@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lifeleft Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="flex flex-column">
+      <div class="container">
+        <h1>Welcome to the Lifeleft Calculator</h1>
+        <p class="header-p">
+          Figure out how many days, weeks, months, and years you have left if
+          you live for a certain age.
+        </p>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <form class="form flex flex-column">
+          <div class="flex input-box">
+            <label for="age">Your age:</label>
+            <input type="number" name="age" id="age" />
+          </div>
+          <div class="flex input-box">
+            <label for="last-age">You would live til the age of:</label>
+            <input type="number" name="last-age" id="last-age" />
+          </div>
+          <button class="main-btn">Generate result</button>
+        </form>
+        <div id="answer-box">
+          <h2 class="ans-heading">Result</h2>
+          <p id="crazy">Some dummy text to see the style</p>
+          <ul class="flex flex-column ans-ul">
+            <li>
+              <p class="ans-p">
+                In days, you have
+                <strong class="gold-text"
+                  ><span id="days-left">SOME</span> days</strong
+                >
+                left to live
+              </p>
+            </li>
+            <li>
+              <p class="ans-p">
+                In weeks, you have
+                <strong class="gold-text"
+                  ><span id="weeks-left">SOME</span> weeks</strong
+                >
+                left to live
+              </p>
+            </li>
+            <li>
+              <p class="ans-p">
+                In months, you have
+                <strong class="gold-text"
+                  ><span id="months-left">SOME</span> months</strong
+                >
+                left to live
+              </p>
+            </li>
+            <li>
+              <p class="ans-p">
+                In years, you have
+                <strong class="gold-text"
+                  ><span id="years-left">SOME</span> years</strong
+                >
+                left to live
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
