@@ -14,7 +14,7 @@
         <h1>Welcome to the Lifeleft Calculator</h1>
         <p class="header-p">
           Figure out how many days, weeks, months, and years you have left if
-          you live for a certain age.
+          you live for a certain age
         </p>
       </div>
     </header>
@@ -23,17 +23,17 @@
         <form class="form flex flex-column">
           <div class="flex input-box">
             <label for="age">Your age:</label>
-            <input type="number" name="age" id="age" />
+            <input type="number" name="age" id="age" required />
           </div>
           <div class="flex input-box">
             <label for="last-age">You would live til the age of:</label>
-            <input type="number" name="last-age" id="last-age" />
+            <input type="number" name="last-age" id="last-age" required />
           </div>
           <button class="main-btn">Generate result</button>
         </form>
-        <div id="answer-box">
+        <div class="hide" id="answer-box">
           <h2 class="ans-heading">Result</h2>
-          <p id="crazy">Some dummy text to see the style</p>
+          <p class="hide" id="crazy">Some dummy text to see the style</p>
           <ul class="flex flex-column ans-ul">
             <li>
               <p class="ans-p">
