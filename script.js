@@ -39,7 +39,7 @@ btn.addEventListener('click', event => {
       crazyText.textContent = `Wait what 🤷? You either put wrong values or you're just playing with this app, well, I'll show you the results nonetheless`;
       crazyText.classList.remove('hide');
     } else {
-      null;
+      crazyText.classList.add('hide');
     }
     result.classList.remove('hide');
 
