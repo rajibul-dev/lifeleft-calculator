@@ -38,6 +38,8 @@ btn.addEventListener('click', event => {
     if (userYearsLeft < 0) {
       crazyText.textContent = `Wait what 🤷? You either put wrong values or you're just playing with this app, well, I'll show you the results nonetheless`;
       crazyText.classList.remove('hide');
+    } else if (userYearsLeft > 200) {
+      crazyText.textContent = `Hello Lucifer! Here's your result, but you sure you're gonna live this long? 🙂`;
     } else {
       crazyText.classList.add('hide');
     }
