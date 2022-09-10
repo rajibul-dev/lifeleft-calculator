@@ -40,6 +40,7 @@ btn.addEventListener('click', event => {
       crazyText.classList.remove('hide');
     } else if (userYearsLeft > 200) {
       crazyText.textContent = `Hello Lucifer! Here's your result, but you sure you're gonna live this long? 🙂`;
+      crazyText.classList.remove('hide');
     } else {
       crazyText.classList.add('hide');
     }
